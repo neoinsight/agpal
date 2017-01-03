@@ -113,282 +113,208 @@ wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licenc
 </nav>
 </header>
 <main role="main" property="mainContentOfPage" class="container">
-<div class="row profile">
-<div class="col-md-6">
-<h1 property="name" id="wb-cont">[Lowest-level subtopic name]</h1>
-<p>1-2 sentences that describe the topics and top tasks that can be accessed on this page.</p>
-<section class="followus">
-<h2>Follow:</h2>
-<ul>
-<li><a href="#facebook" class="facebook wb-lbx"><span class="wb-inv">Facebook</span></a></li>
-<li><a href="#" class="twitter" rel="external"><span class="wb-inv">Twitter</span></a></li>
-<li><a href="#youtube" class="youtube wb-lbx"><span class="wb-inv">YouTube</span></a></li>
-<li><a href="#" class="flickr" rel="external"><span class="wb-inv">Flickr</span></a></li>
-<li><a href="#" class="googleplus" rel="external"><span class="wb-inv">Google+</span></a></li>
-<li><a href="#" class="pinterest" rel="external"><span class="wb-inv">Pinterest</span></a></li>
-<li><a href="#" class="linkedin" rel="external"><span class="wb-inv">LinkedIn</span></a></li>
-</ul>
-</section>
-<section id="facebook" class="mfp-hide modal-dialog modal-content overlay-def">
-<header class="modal-header">
-<h2 class="modal-title">Facebook</h2>
-</header>
-<div class="modal-body">
-<ul class="list-unstyled lst-spcd">
-<li><a href="#" rel="external">[First Facebook account title]</a></li>
-<li><a href="#" rel="external">[Second Facebook account title]</a></li>
-</ul>
+<h1 property="name" id="wb-cont">Find a consultation</h1>
+<div class="row mrgn-tp-lg">
+<aside class="col-xs-12 col-sm-5 col-md-4 col-lg-3">
+<p>Use keywords and filters to refine your results</p>
+<form action="index-eng.php" method="post">
+<div>
+<label for="contains">Contains</label><br />
+<div class="input-group">
+<input type="text" class="form-control" id="contains" name="contains" placeholder="nutrition"/>
+<span class="input-group-btn">
+			<button class="btn btn-primary" type="submit">Find</button>
+		</span>
+        </div>
 </div>
-</section>
-<section id="youtube" class="mfp-hide modal-dialog modal-content overlay-def">
-<header class="modal-header">
-<h2 class="modal-title">YouTube</h2>
-</header>
-<div class="modal-body">
-<ul class="list-unstyled lst-spcd">
-<li><a href="#" rel="external">[First YouTube account title]</a></li>
-<li><a href="#" rel="external">[Second YouTube account title]</a></li>
-<li><a href="#" rel="external">[Third YouTube account title]</a></li>
-</ul>
+<details open="open" class="mrgn-tp-lg">
+	<summary><strong>Filter your results</strong></summary>            
+	<div class="form-group">
+		<label for="type">Current status</label><br />
+		<select id="current status" name="current status" class="form-control full-width">
+			<option value="all">All</option>
+			<option value="open">Open - accepting input</option>
+			<option value="closed-interim">Closed - analyzing input</option> 
+			<option value="closed-completed">Closed - report available</option>
+		</select>
+	</div>
+	<div class="form-group">
+			<label for="year">Year</label><br />
+			<select id="year" name="year" class="form-control full-width">
+				<option value="00">All years</option>
+				<option value="16">2016</option>
+				<option value="15">2015</option>
+				<option value="14">2014</option>
+				<option value="13">2013</option>
+				<option value="12">2012</option>
+				<option value="11">2011</option>
+				<option value="10">2010</option>
+				<option value="09">2009</option>
+				<option value="08">2008</option>
+				<option value="07">2007</option>
+				<option value="06">2006</option>
+			</select>
+	</div>
+<div class="form-group">
+	<label for="subject">Subject</label><br />
+	<select id="subject" name="subject" class="form-control full-width">
+				<option value="01">All subjects</option>
+				<option value="02">Aboriginal peoples</option>
+				<option value="03">Advertising / Marketing</option>
+				<option value="04">Agriculture</option>
+				<option value="05">Amendments</option>
+				<option value="06">Arts</option>
+				<option value="07">Children</option>
+				<option value="08">Communication</option>
+				<option value="09">Copyright / Trademarks / Patents</option>
+				<option value="10">Culture</option>
+				<option value="11">Development</option>
+				<option value="11">Economic development</option>
+				<option value="12">Economy</option>
+				<option value="13">Employment</option>
+				<option value="14">Environment</option>
+				<option value="15">Exporting/Importing</option>
+				<option value="16">Finance</option>
+				<option value="17">Financial assistance and entitlements</option>
+				<option value="18">Fisheries</option>
+				<option value="19">Food and drug</option>
+				<option value="20">Foreign affairs</option>
+				<option value="21">Foreign policy</option>
+				<option value="22">Government procurement</option>
+				<option value="23">Health</option>
+				<option value="24">Heritage</option>
+				<option value="25">Housing</option>
+				<option value="26">Human resources</option>
+				<option value="27">Industry</option>
+				<option value="28">Justice and the Law</option>
+				<option value="29">Labour</option>
+				<option value="30">National Defence</option>
+				<option value="31">Natural resources</option>
+				<option value="32">Persons with disabilities</option>
+				<option value="33">Policy</option>
+				<option value="34">Private sector</option>
+				<option value="35">Public safety</option>
+				<option value="36">Recreation</option>
+				<option value="37">Regulations</option>
+				<option value="38">Rural and remote services</option>
+				<option value="39">Science and technology</option>
+				<option value="40">Seniors</option>
+				<option value="41">Service</option>
+				<option value="42">Society</option>
+				<option value="43">Taxes</option>
+				<option value="44">Trade</option> 
+				<option value="45">Transportation</option>
+				<option value="46">Youth</option>
+	</select>
 </div>
-</section>
-</div>
-<div class="col-md-6 margin-top-small hidden-sm hidden-xs">
-<img src="./img/520x200.png" alt="" class="pull-right img-responsive thumbnail">
-</div>
+<div class="form-group">
+	<label for="Organization">Organization</label><br /> 
+	<select id="organization" name="organization" class="form-control full-width">
+		<option value="all organizations">All Organizations</option>
+		<option value="agriculture-and-agri-food">Agriculture and Agri-Food Canada</option>
+		<option value="canada-border-services">Canada Border Services Agency</option>
+		<option value="canada-mortgage-and-housing">Canada Mortgage and Housing Corporation</option>
+		<option value="canada-revenue">Canada Revenue Agency</option>
+		<option value="canadian-environmental-assessment">Canadian Environmental Assessment Agency</option>
+		<option value="canadian-grain">Canadian Grain Commission</option>
+		<option value="canadian-heritage">Canadian Heritage</option>
+		<option value="canadian-transportation">Canadian Transportation Agency</option>
+		<option value="employment-and-social-development">Employment and Social Development Canada</option>
+		<option value="environment-canada">Environment Canada</option>
+		<option value="finance-canada">Finance Canada</option>
+		<option value="fisheries-and-oceans">Fisheries and Oceans Canada</option>
+		<option value="health-canada">Health Canada</option>
+		<option value="house-of-commons">House of Commons</option>
+		<option value="indigenous-and-northern-affairs">Indigenous and Northern Affairs Canada</option>
+		<option value="infrastructure">Infrastructure Canada</option>
+		<option value="innovation-science-and-economic-development">Innovation, Science and Economic Development Canada</option>
+		<option value="natural-resources">Natural Resources Canada</option>
+		<option value="patented-medicine-prices-review-board">Patented Medicine Prices Review Board</option>
+		<option value="public-works-and-government-services">Public Works and Government Services Canada</option>
+		<option value="transport-canada">Transport Canada</option>
+		<option value="treasury-board">Treasury Board of Canada, Secretariat</option>
+		<option value="veterans-affairs">Veterans Affairs Canada</option>
+        </select>	
 </div>
 <div class="row">
-<section class="col-md-8">
-<h2>Services and information</h2>
-<div class="row">
-<div class="col-md-6">
-<section class="gc-drmt">
-<h3 class="h5"><a href="#">[Task]</a></h3>
-<p>Summary of the information or tasks that can be accomplished on the destination page. Remove prose or promotional messaging. Use action verbs.</p>
-</section>
+<div class="col-xs-6">
+<input type="submit" value="Apply" class="btn btn-primary btn-sm" name="submit" id="submit" />
 </div>
-<div class="col-md-6">
-<section class="gc-drmt">
-<h3 class="h5"><a href="#">[Task]</a></h3>
-<p>Summary of the information or tasks that can be accomplished on the destination page. Remove prose or promotional messaging. Use action verbs.</p>
-</section>
-</div>
-<div class="clearfix"></div>
-<div class="col-md-6">
-<section class="gc-drmt">
-<h3 class="h5"><a href="#">[Task]</a></h3>
-<p>Summary of the information or tasks that can be accomplished on the destination page. Remove prose or promotional messaging. Use action verbs.</p>
-</section>
-</div>
-<div class="col-md-6">
-<section class="gc-drmt">
-<h3 class="h5"><a href="#">[Task]</a></h3>
-<p>Summary of the information or tasks that can be accomplished on the destination page. Remove prose or promotional messaging. Use action verbs.</p>
-</section>
-</div>
-<div class="clearfix"></div>
-<div class="col-md-6">
-<section class="gc-drmt">
-<h3 class="h5"><a href="#">[Task]</a></h3>
-<p>Summary of the information or tasks that can be accomplished on the destination page. Remove prose or promotional messaging. Use action verbs.</p>
-</section>
-</div>
-<div class="col-md-6">
-<section class="gc-drmt">
-<h3 class="h5"><a href="#">[Task]</a></h3>
-<p>Summary of the information or tasks that can be accomplished on the destination page. Remove prose or promotional messaging. Use action verbs.</p>
-</section>
-</div>
-<div class="clearfix"></div>
-<details class="mrgn-tp-md brdr-0">
-<summary class="btn btn-default text-center">Show more services and information</summary>
-<div class="row">
-<div class="col-md-6">
-<section class="gc-drmt">
-<h3 class="h5"><a href="#">[Task]</a></h3>
-<p>Summary of the information or tasks that can be accomplished on the destination page. Remove prose or promotional messaging. Use action verbs.</p>
-</section>
-</div>
-<div class="col-md-6">
-<section class="gc-drmt">
-<h3 class="h5"><a href="#">[Task]</a></h3>
-<p>Summary of the information or tasks that can be accomplished on the destination page. Remove prose or promotional messaging. Use action verbs.</p>
-</section>
-</div>
-<div class="clearfix"></div>
-<div class="col-md-6">
-<section class="gc-drmt">
-<h3 class="h5"><a href="#">[Task]</a></h3>
-<p>Summary of the information or tasks that can be accomplished on the destination page. Remove prose or promotional messaging. Use action verbs.</p>
-</section>
-</div>
-<div class="col-md-6">
-<section class="gc-drmt">
-<h3 class="h5"><a href="#">[Task]</a></h3>
-<p>Summary of the information or tasks that can be accomplished on the destination page. Remove prose or promotional messaging. Use action verbs.</p>
-</section>
-</div>
-<div class="clearfix"></div>
-<div class="col-md-6">
-<section class="gc-drmt">
-<h3 class="h5"><a href="#">[Task]</a></h3>
-<p>Summary of the information or tasks that can be accomplished on the destination page. Remove prose or promotional messaging. Use action verbs.</p>
-</section>
-</div>
-<div class="col-md-6">
-<section class="gc-drmt">
-<h3 class="h5"><a href="#">[Task]</a></h3>
-<p>Summary of the information or tasks that can be accomplished on the destination page. Remove prose or promotional messaging. Use action verbs.</p>
-</section>
+<div class="col-xs-6 text-right">
+<input type="reset" value="Reset" class="btn btn-default btn-sm" name="reset" id="reset">
+
 </div>
 <div class="clearfix"></div>
 </div>
 </details>
-</div>
+</form>
+</aside>
+
+<section class="col-xs-12 col-sm-7 col-md-8 col-lg-9">
+
+<h2 class="mrgn-tp-0">24 results<br />
+<span class="h5">All consultations containing "nutrition"</span></h2>
+<div>
+<section class="brdr-bttm">
+<h3 class="h5"><a href="http://neoinsight.github.io/prototypes/experimental/north_engage-en.html">Nutrition North Canada</a></h3>
+<p><span class="text-muted">Indigenous and Northern Affairs Canada</span><br />
+As part of its commitment to improve Nutrition North Canada (NNC), the Government of Canada is seeking input from community members and other stakeholders on how the program can be more transparent, cost-effective, and culturally appropriate in the face of growing demand for healthy food in the North.</p>
 </section>
-<div class="col-md-4 mrgn-tp-lg">
-<section class="lnkbx">
-<h2>
-Contributors
-</h2>
-<ul>
-<li><a href="#">[Institution name]</a></li>
-<li><a href="#">[Institution name]</a></li>
-<li><a href="#">[Institution name]</a></li>
-</ul>
+<section class="brdr-bttm">
+<h3 class="h5"><a href="http://www.hc-sc.gc.ca/fn-an/consult/2016-oyster-huitre/index-eng.php">Health Canada Request for Input and Scientific Data: Vibrio parahaemolyticus in oyster shellstock intended for raw consumption</a></h3>
+<p><span class="text-muted">Health Canada</span><br />
+Health Canada's Bureau of Microbial Hazards (BMH), Food Directorate, is in the process of reviewing its current Vibrio parahaemolyticus (Vp) microbiological guideline pertaining to oysters intended for raw consumption and identifying additional guidance that should be communicated to industry and consumers in order to minimize the risk to Canadians.</p>
 </section>
-<section class="lnkbx">
-<h2>More information for</h2>
-<ul>
-<li><a href="#">[Audience hyperlink text]</a></li>
-<li><a href="#">[Audience hyperlink text]</a></li>
-<li><a href="#">[Audience hyperlink text]</a></li>
-</ul>
+<section class="brdr-bttm">
+<h3 class="h5"><a href="http://hc-sc.gc.ca/fn-an/consult/nom-adm-0071/index-eng.php">Notice - food additive transglutaminase</a></h3>
+<p><span class="text-muted">Health Canada</span><br />
+Health Canada's Food Directorate completed a detailed safety assessment of a food additive submission seeking approval for the use of transglutaminase from Streptoverticillium mobaraense S-8112 as a food enzyme in bread, flour, whole wheat flour, and unstandardized bakery products.</p>
 </section>
-</div>
-</div>
-<section>
-<h2>What we are doing</h2>
-<div class="row wb-eqht">
-<section class="col-lg-4 col-md-6">
-<h3>Laws and regulations</h3>
-<ul>
-<li><a href="#">[Regulation 1]</a></li>
-<li><a href="#">[Law 1 with a long heading]</a></li>
-<li><a href="#">[Regulation 2 with a long heading]</a></li>
-<li><a href="#">[Regulation 3]</a></li>
-</ul>
-<p><a href="#">All related laws and regulations</a></p>
+<section class="brdr-bttm">
+<h3 class="h5"><a href="http://healthycanadians.gc.ca/health-system-systeme-sante/consultations/partially-hydrogenated-oils-huiles-partiellement-hydrogenees/index-eng.php?_ga=1.230347669.863703896.1468934450">Request for data: Partially hydrogenated oils in the Canadian food supply</a></h3>
+<p><span class="text-muted">Health Canada</span><br />
+This call for data is related to the current use of partially hydrogenated oils (PHOs). PHOs are the main source of industrially produced trans fats in foods. Between May 30 and June 29, 2016, we will be engaging with key stakeholders.</p>
 </section>
-<section class="col-lg-4 col-md-6">
-<h3>Publications</h3>
-<ul>
-<li><a href="#">[Publication 1]</a></li>
-<li><a href="#">[Publication 2 with a long heading]</a></li>
-<li><a href="#">[Publication 3]</a></li>
-<li><a href="#">[Publication 4]</a></li>
-</ul>
-<p><a href="#">All related publications</a></p>
+<section class="brdr-bttm">
+<h3 class="h5"><a href="http://hc-sc.gc.ca/fn-an/consult/nop-avp-0019/index-eng.php">Notice of Health Canada's Proposal to Enable the Use of Sucrose Monoesters of Lauric, Palmitic or Stearic Acid as Emulsifiers in Unstandardized Beverages - Reference Number: NOP/AVP-0019</a></h3>
+<p><span class="text-muted">Health Canada</span><br />
+Health Canada's Food Directorate completed a detailed safety assessment of a food additive submission seeking approval for the use of sucrose monoesters of lauric, palmitic or stearic acid as emulsifiers in unstandardized beverages, unstandardized beverage concentrates, and unstandardized beverage mixes.</p>
 </section>
-<section class="col-lg-4 col-md-6">
-<h3>Consultations</h3>
-<ul>
-<li><a href="#">[Consultation 1]</a></li>
-<li><a href="#">[Consultation 2 with a long heading]</a></li>
-<li><a href="#">[Consultation 3]</a></li>
-<li><a href="#">[Consultation 4 with a long heading..and a bit longer]</a></li>
-</ul>
-<p><a href="#">All related consultations</a></p>
-</section>
-<section class="col-lg-4 col-md-6">
-<h3>Open data</h3>
-<ul>
-<li><a href="#">[Open data 1]</a></li>
-<li><a href="#">[Open data 2 with a long heading]</a></li>
-<li><a href="#">[Open data 3]</a></li>
-<li><a href="#">[Open data 4 with a long heading..and a bit longer]</a></li>
-</ul>
-<p><a href="#">All related open data</a></p>
-</section>
-<section class="col-lg-4 col-md-6">
-<h3>Statistics</h3>
-<ul>
-<li><a href="#">[Statistic 1]</a></li>
-<li><a href="#">[Statistic 2 with a long heading]</a></li>
-<li><a href="#">[Statistic 3]</a></li>
-<li><a href="#">[Statistic 4 with a long heading..and a bit longer]</a></li>
-</ul>
-<p><a href="#">All related statistics</a></p>
+<section class="brdr-bttm">
+<h3 class="h5"><a href="http://healthycanadians.gc.ca/health-system-systeme-sante/consultations/acide-perfluorooctanoic-acid/index-eng.php?_ga=1.4976698.863703896.1468934450">Technical Consultation - PFOA in Drinking Water</a></h3>
+<p><span class="text-muted">Health Canada</span><br />
+The Federal-Provincial-Territorial Committee on Drinking Water (CDW) is responsible for establishing and maintaining the Guidelines for Canadian Drinking Water Quality.</p>
 </section>
 </div>
-</section>
-<section class="gc-prtts">
-<h2>Features</h2>
-<div class="row">
-<section class="col-lg-4 col-md-6 mrgn-bttm-md">
-<a href="#">
-<h3 class="h5">[Feature hyperlink text]</h3>
-<img src="./img/360x203.png" alt="" class="img-responsive thumbnail mrgn-bttm-sm">
-</a>
-<p>Brief description of the feature being promoted.</p>
-</section>
-<section class="col-lg-4 col-md-6 mrgn-bttm-md">
-<a href="#">
-<h3 class="h5">[Feature hyperlink text]</h3>
-<img src="./img/360x203.png" alt="" class="img-responsive thumbnail mrgn-bttm-sm">
-</a>
-<p>Brief description of the feature being promoted.</p>
-</section>
-<section class="col-lg-4 col-md-6 mrgn-bttm-md">
-<a href="#">
-<h3 class="h5">[Feature hyperlink text]</h3>
-<img src="./img/360x203.png" alt="" class="img-responsive thumbnail mrgn-bttm-sm">
-</a>
-<p>Brief description of the feature being promoted.</p>
+
+<ul class="pagination">
+	<li class="active"><a href="#">1</a></li>
+	<li><a href="#">2</a></li>
+	<li><a href="#">3</a></li>
+	<li><a href="#" rel="next">Next</a></li>
+</ul>
 </section>
 </div>
-</section>
 <div class="row pagedetails">
-<div class="col-sm-6 col-lg-4 mrgn-tp-sm">
-<a href="https://www.canada.ca/en/report-problem.html" class="btn btn-default btn-block">Report a problem or mistake on this page</a>
-</div>
-<div class="col-sm-3 mrgn-tp-sm pull-right">
-<div class="wb-share" data-wb-share='{"lnkClass": "btn btn-default btn-block"}'></div>
-</div>
-<div class="datemod col-xs-12 mrgn-tp-lg">
+<div class="col-sm-5 col-xs-12 datemod">
 <dl id="wb-dtmd">
-<dt>Date modified:&#32;</dt>
-<dd><time property="dateModified">2014-10-24</time></dd>
+<dt>Date modified: </dt>
+<dd><time property="dateModified">2016-08-10</time></dd>
 </dl>
 </div>
+<div class="clear visible-xs"></div>
+<div class="col-sm-4 col-xs-6">
+<a href="http://www.canada.ca/en/contact/feedback.html" class="btn btn-default"><span class="glyphicon glyphicon-comment mrgn-rght-sm"></span>Feedback<span class="wb-inv"> about this web site</span></a>
 </div>
-</main>
-<aside class="gc-nttvs container">
-<h2>Government of Canada activities and initiatives</h2>
-<div id="gcwb_prts" class="wb-eqht row">
-<section class="col-lg-4 col-md-6 mrgn-bttm-md">
-<a rel="external" href="#">
-<h3 class="h5">[Activities and initiatives hyperlink text]</h3>
-<img class="img-responsive thumbnail mrgn-bttm-sm" src="./img/features/355x113.png" alt="">
-</a>
-<p>Brief description of the initiative, task or information being promoted.</p>
-</section>
-<section class="col-lg-4 col-md-6 mrgn-bttm-md">
-<a rel="external" href="#">
-<h3 class="h5">[Activities and initiatives hyperlink text]</h3>
-<img class="img-responsive thumbnail mrgn-bttm-sm" src="./img/features/355x113.png" alt="">
-</a>
-<p>Brief description of the initiative, task or information being promoted.</p>
-</section>
-<section class="col-lg-4 col-md-6 mrgn-bttm-md">
-<a rel="external" href="#">
-<h3 class="h5">[Activities and initiatives hyperlink text]</h3>
-<img class="img-responsive thumbnail mrgn-bttm-sm" src="./img/features/355x113.png" alt="">
-</a>
-<p>Brief description of the initiative, task or information being promoted.</p>
-</section>
+<div class="col-sm-3 col-xs-6 text-right">
+<div class="wb-share" data-wb-share="{&quot;lnkClass&quot;: &quot;btn btn-default&quot;}"></div>
 </div>
-</aside>
+<div class="clear visible-xs"></div>
+</div>
+
+
+    
+   </main>      
 <footer role="contentinfo" id="wb-info">
 <nav role="navigation" class="container wb-navcurr">
 <h2 class="wb-inv">About government</h2>
