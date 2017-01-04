@@ -5,7 +5,7 @@
 <meta charset="utf-8">
 <!-- Web Experience Toolkit (WET) / Boîte à outils de l'expérience Web (BOEW)
 wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licence-fr.html -->
-<title>[Lowest-level subtopic name] - Canada.ca</title>
+<title>AgPal Program and Service Finder</title>
 <meta content="width=device-width,initial-scale=1" name="viewport">
 <!-- Meta data -->
 <meta name="description" content="Web Experience Toolkit (WET) includes reusable components for building and maintaining innovative Web sites that are accessible, usable, and interoperable. These reusable components are open source software and free for use by departments and external Web communities">
@@ -113,39 +113,40 @@ wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licenc
 </nav>
 </header>
 <main role="main" property="mainContentOfPage" class="container">
-<h1 property="name" id="wb-cont">Find a consultation</h1>
+<h1 property="name" id="wb-cont">AgPal: Find a program or service</h1>
 <div class="row mrgn-tp-lg">
 <aside class="col-xs-12 col-sm-5 col-md-4 col-lg-3">
 <p>Use keywords and filters to refine your results</p>
 <form action="index-eng.php" method="post">
-<div>
-<label for="contains">Contains</label><br />
-<div class="input-group">
-<input type="text" class="form-control" id="contains" name="contains" placeholder="nutrition"/>
-<span class="input-group-btn">
-			<button class="btn btn-primary" type="submit">Find</button>
-		</span>
-        </div>
-</div>
 <details open="open" class="mrgn-tp-lg">
 	<summary><strong>Filter your results</strong></summary>            
 	<div class="form-group">
-		<label for="type">Current status</label><br />
-		<select id="current status" name="current status" class="form-control full-width">
-			<option value="all">All</option>
-			<option value="open">Open - accepting input</option>
-			<option value="closed-interim">Closed - analyzing input</option> 
-			<option value="closed-completed">Closed - report available</option>
-		</select>
-	</div>
+					<label for="frmProvince"><span class="field-name">Province or territory</span></label>
+					<select class="form-control" id="frmProvince" name="frmProvince">
+						<option label="All provinces"></option>
+						<option value="Alberta">Alberta</option>
+						<option value="British Columbia">British Columbia</option>
+						<option value="Manitoba">Manitoba</option>
+						<option value="New Brunswick">New Brunswick</option>
+						<option value="Newfoundland and Labrador">Newfoundland and Labrador</option>
+						<option value="Northwest Territories">Northwest Territories</option>
+						<option value="Nova Scotia">Nova Scotia</option>
+						<option value="Nunavut">Nunavut</option>
+						<option value="Ontario">Ontario</option>
+						<option value="Prince Edward Island">Prince Edward Island</option>
+						<option value="Quebec">Quebec</option>
+						<option value="Saskatchewan">Saskatchewan</option>
+						<option value="Yukon">Yukon</option>
+					</select>
+				</div>
 	<div class="form-group">
-			<label for="year">Year</label><br />
+			<label for="year">Business success</label><br />
 			<select id="year" name="year" class="form-control full-width">
-				<option value="00">All years</option>
-				<option value="16">2016</option>
-				<option value="15">2015</option>
-				<option value="14">2014</option>
-				<option value="13">2013</option>
+				<option value="00">Financing, credit, stability (43)</option>
+				<option value="16">New to farming (10)</option>
+				<option value="15">Business planning, analyis (33)</option>
+				<option value="14">Market analysis, prices, forecasts (5)</option>
+				<option value="13">Land purchase, leasing, access (17)</option>
 				<option value="12">2012</option>
 				<option value="11">2011</option>
 				<option value="10">2010</option>
@@ -156,85 +157,52 @@ wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licenc
 			</select>
 	</div>
 <div class="form-group">
-	<label for="subject">Subject</label><br />
+	<label for="subject">Markets, marketing, trade</label><br />
 	<select id="subject" name="subject" class="form-control full-width">
-				<option value="01">All subjects</option>
-				<option value="02">Aboriginal peoples</option>
+				<option value="01">Market analysis, prices, forecasts (5)</option>
+				<option value="02">Branding, advertising, promotion (13)</option>
 				<option value="03">Advertising / Marketing</option>
 				<option value="04">Agriculture</option>
 				<option value="05">Amendments</option>
 				<option value="06">Arts</option>
-				<option value="07">Children</option>
-				<option value="08">Communication</option>
-				<option value="09">Copyright / Trademarks / Patents</option>
-				<option value="10">Culture</option>
-				<option value="11">Development</option>
-				<option value="11">Economic development</option>
-				<option value="12">Economy</option>
-				<option value="13">Employment</option>
-				<option value="14">Environment</option>
-				<option value="15">Exporting/Importing</option>
-				<option value="16">Finance</option>
-				<option value="17">Financial assistance and entitlements</option>
-				<option value="18">Fisheries</option>
-				<option value="19">Food and drug</option>
-				<option value="20">Foreign affairs</option>
-				<option value="21">Foreign policy</option>
-				<option value="22">Government procurement</option>
-				<option value="23">Health</option>
-				<option value="24">Heritage</option>
-				<option value="25">Housing</option>
-				<option value="26">Human resources</option>
-				<option value="27">Industry</option>
-				<option value="28">Justice and the Law</option>
-				<option value="29">Labour</option>
-				<option value="30">National Defence</option>
-				<option value="31">Natural resources</option>
-				<option value="32">Persons with disabilities</option>
-				<option value="33">Policy</option>
-				<option value="34">Private sector</option>
-				<option value="35">Public safety</option>
-				<option value="36">Recreation</option>
-				<option value="37">Regulations</option>
-				<option value="38">Rural and remote services</option>
-				<option value="39">Science and technology</option>
-				<option value="40">Seniors</option>
-				<option value="41">Service</option>
-				<option value="42">Society</option>
-				<option value="43">Taxes</option>
-				<option value="44">Trade</option> 
-				<option value="45">Transportation</option>
-				<option value="46">Youth</option>
 	</select>
 </div>
 <div class="form-group">
-	<label for="Organization">Organization</label><br /> 
+	<label for="Organization">Environment, energy, stewardship</label><br /> 
 	<select id="organization" name="organization" class="form-control full-width">
-		<option value="all organizations">All Organizations</option>
-		<option value="agriculture-and-agri-food">Agriculture and Agri-Food Canada</option>
-		<option value="canada-border-services">Canada Border Services Agency</option>
-		<option value="canada-mortgage-and-housing">Canada Mortgage and Housing Corporation</option>
-		<option value="canada-revenue">Canada Revenue Agency</option>
-		<option value="canadian-environmental-assessment">Canadian Environmental Assessment Agency</option>
-		<option value="canadian-grain">Canadian Grain Commission</option>
-		<option value="canadian-heritage">Canadian Heritage</option>
-		<option value="canadian-transportation">Canadian Transportation Agency</option>
-		<option value="employment-and-social-development">Employment and Social Development Canada</option>
-		<option value="environment-canada">Environment Canada</option>
-		<option value="finance-canada">Finance Canada</option>
-		<option value="fisheries-and-oceans">Fisheries and Oceans Canada</option>
-		<option value="health-canada">Health Canada</option>
-		<option value="house-of-commons">House of Commons</option>
-		<option value="indigenous-and-northern-affairs">Indigenous and Northern Affairs Canada</option>
-		<option value="infrastructure">Infrastructure Canada</option>
-		<option value="innovation-science-and-economic-development">Innovation, Science and Economic Development Canada</option>
-		<option value="natural-resources">Natural Resources Canada</option>
-		<option value="patented-medicine-prices-review-board">Patented Medicine Prices Review Board</option>
-		<option value="public-works-and-government-services">Public Works and Government Services Canada</option>
-		<option value="transport-canada">Transport Canada</option>
-		<option value="treasury-board">Treasury Board of Canada, Secretariat</option>
-		<option value="veterans-affairs">Veterans Affairs Canada</option>
+		<option value="17">Climate, geography, optimizing land use (9)</option>
+		<option value="16">Energy, sustainability, BMPs (27)</option>
+		<option value="15">Pest management, organic farming (17)</option>
+		<option value="14">Predators, wildlife (7)</option>
+		<option value="13">Water, soil, shelterbelts (18)</option>
         </select>	
+</div>
+<div class="form-group">
+	<label for="subject">Food safety, animal health</label><br />
+	<select id="subject" name="subject" class="form-control full-width">
+				<option value="01">Food safety, traceability, biosecurity (39)</option>
+				<option value="02">Animal health, welfare, genetics (24))</option>
+	</select>
+</div>
+<div class="form-group">
+	<label for="subject">Science, sector innovation</label><br />
+	<select id="subject" name="subject" class="form-control full-width">
+				<option value="01">Basic and applied research (34)</option>
+				<option value="02">Product development, commercialization (27)</option>
+				<option value="03">Manufacturing, processing, value-added (11)/option>
+				<option value="04">Leadership, workforce development (15)</option>
+				<option value="05">Sector competitiveness, adaptation (13)</option>
+				<option value="06">Branding, advertising, promotion (13)</option>
+	</select>
+</div>
+<div>
+<label for="contains">Use a keyword</label><br />
+<div class="input-group">
+<input type="text" class="form-control" id="contains" name="contains" placeholder="nutrition"/>
+<span class="input-group-btn">
+			<button class="btn btn-primary" type="submit">Find</button>
+		</span>
+        </div>
 </div>
 <div class="row">
 <div class="col-xs-6">
@@ -252,23 +220,35 @@ wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licenc
 
 <section class="col-xs-12 col-sm-7 col-md-8 col-lg-9">
 
-<h2 class="mrgn-tp-0">24 results<br />
-<span class="h5">All consultations containing "nutrition"</span></h2>
+<h2 class="mrgn-tp-0">272 results<br />
+<span class="h5">All programs and services</span></h2>
 <div>
 <section class="brdr-bttm">
-<h3 class="h5"><a href="http://neoinsight.github.io/prototypes/experimental/north_engage-en.html">Nutrition North Canada</a></h3>
-<p><span class="text-muted">Indigenous and Northern Affairs Canada</span><br />
-As part of its commitment to improve Nutrition North Canada (NNC), the Government of Canada is seeking input from community members and other stakeholders on how the program can be more transparent, cost-effective, and culturally appropriate in the face of growing demand for healthy food in the North.</p>
+	<h3 class="h5"><a href="http://news.gc.ca/web/article-en.do?nid=972809">2014 Canada-British Columbia Avian Influenza Assistance Initiative</a></h3>
+	<p><span class="text-muted">British Columbia</span><br />
+	To help British Columbia poultry producers with the extraordinary costs of containing and recovering from an Avian Influenza outbreak.
+	</p>
+	<details>
+				<summary>See details</summary>
+				<h4>Description</h4>
+				<p>Livestock producers in Manitoba who are experiencing feed-related extraordinary costs due to elevated water levels or excess moisture conditions in 2014 may be eligible for assistance under this federal-provincial AgriRecovery initiative. Payments will be calculated based on the feed needs for individual farm operations on the follow basis:</p>
+				<h4>Contact</h4>
+				<p><span class="text-muted">Manitoba Agriculture, Food and Rural Initiatives (MAFRD)</span><br />
+				<a href="http://www.gov.mb.ca/agriculture/contact/index.html">MAFRD Growing Opportunities (GO) Centres</a></p>
+				<h4>More information</h4>
+				<a href="http://www.gov.mb.ca/agriculture/contact/index.html">Forage shortfall assistance</a>
+				<a href="http://www.gov.mb.ca/agriculture/contact/index.html">Transportation assistance</a>			
+	</details>
 </section>
 <section class="brdr-bttm">
-<h3 class="h5"><a href="http://www.hc-sc.gc.ca/fn-an/consult/2016-oyster-huitre/index-eng.php">Health Canada Request for Input and Scientific Data: Vibrio parahaemolyticus in oyster shellstock intended for raw consumption</a></h3>
-<p><span class="text-muted">Health Canada</span><br />
-Health Canada's Bureau of Microbial Hazards (BMH), Food Directorate, is in the process of reviewing its current Vibrio parahaemolyticus (Vp) microbiological guideline pertaining to oysters intended for raw consumption and identifying additional guidance that should be communicated to industry and consumers in order to minimize the risk to Canadians.</p>
+<h3 class="h5"><a href="http://www.gov.mb.ca/agriculture/growing-forward-2/business-risk-management/agrirecovery-forage-shortfall-assistance.html">2014 Canada-Manitoba Forage Shortfall and Transportation Assistance Initiative</a></h3>
+<p><span class="text-muted">Manitoba</span><br />
+To help Manitoba livestock producers, experiencing forage shortages caused by elevated water levels, secure the feed they need to maintain their breeding herds over the 2014/15 winter feeding season.</p>
 </section>
 <section class="brdr-bttm">
-<h3 class="h5"><a href="http://hc-sc.gc.ca/fn-an/consult/nom-adm-0071/index-eng.php">Notice - food additive transglutaminase</a></h3>
-<p><span class="text-muted">Health Canada</span><br />
-Health Canada's Food Directorate completed a detailed safety assessment of a food additive submission seeking approval for the use of transglutaminase from Streptoverticillium mobaraense S-8112 as a food enzyme in bread, flour, whole wheat flour, and unstandardized bakery products.</p>
+<h3 class="h5"><a href="http://www.saskatchewan.ca/business/agriculture-natural-resources-and-industry/agribusiness-farmers-and-ranchers/crown-lands/agricultural-crown-land-sale-program">2015 Agricultural Crown Land Sale Program</a></h3>
+<p><span class="text-muted">Saskatchewan</span><br />
+The Agricultural Crown Land Sale Program is an incentive program to encourage the sale of occupied agricultural Crown land</p>
 </section>
 <section class="brdr-bttm">
 <h3 class="h5"><a href="http://healthycanadians.gc.ca/health-system-systeme-sante/consultations/partially-hydrogenated-oils-huiles-partiellement-hydrogenees/index-eng.php?_ga=1.230347669.863703896.1468934450">Request for data: Partially hydrogenated oils in the Canadian food supply</a></h3>
