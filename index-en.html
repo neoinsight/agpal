@@ -118,9 +118,7 @@ wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licenc
 <aside class="col-xs-12 col-sm-5 col-md-4 col-lg-3">
 <p>Use keywords and filters to refine your results</p>
 <form action="index-eng.php" method="post">
-<details open="open" class="mrgn-tp-lg">
-	<summary><strong>Filter your results</strong></summary>            
-	<div class="form-group">
+		<div class="form-group">
 					<label for="frmProvince"><span class="field-name">Province or territory</span></label>
 					<select class="form-control" id="frmProvince" name="frmProvince">
 						<option label="All provinces"></option>
@@ -139,6 +137,17 @@ wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licenc
 						<option value="Yukon">Yukon</option>
 					</select>
 				</div>
+<div>
+	<label for="contains">One keyword</label><br />
+	<div class="input-group">
+	<input type="text" class="form-control" id="contains" name="contains" placeholder="nutrition"/>
+	<span class="input-group-btn">
+			<button class="btn btn-primary" type="submit">Find</button>
+	</span>
+        </div>
+</div>
+<details open="open" class="mrgn-tp-lg">
+	<summary><strong>Filter your results</strong></summary>            
 	<div class="form-group">
 			<label for="year">Business success</label><br />
 			<select id="year" name="year" class="form-control full-width">
@@ -159,7 +168,7 @@ wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licenc
 	<fieldset>
 			<legend class="field-name" id="ast-dec">Business success:</legend>
 				<div class="checkbox">
-					<label for="technology1"><input type="checkbox" name="phone" value="1" id="technology1" />&#160;&#160;Financing, credit, stability (43)smart phone</label>
+					<label for="technology1"><input type="checkbox" name="phone" value="1" id="technology1" />&#160;&#160;Financing, credit, stability (43)</label>
 				</div>
 				<div class="checkbox">
 					<label for="technology2"><input type="checkbox" name="laptop" value="2" id="technology2" />&#160;&#160;New to farming (10)</label>
@@ -209,15 +218,6 @@ wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licenc
 				<option value="05">Sector competitiveness, adaptation (13)</option>
 				<option value="06">Branding, advertising, promotion (13)</option>
 	</select>
-</div>
-<div>
-<label for="contains">Use a keyword</label><br />
-<div class="input-group">
-<input type="text" class="form-control" id="contains" name="contains" placeholder="nutrition"/>
-<span class="input-group-btn">
-			<button class="btn btn-primary" type="submit">Find</button>
-		</span>
-        </div>
 </div>
 <div class="row">
 <div class="col-xs-6">
