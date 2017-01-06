@@ -140,7 +140,7 @@ wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licenc
 <div>
 	<label for="contains">One keyword</label><br />
 	<div class="input-group">
-	<input type="text" class="form-control" id="contains" name="contains" placeholder="nutrition"/>
+	<input type="text" class="form-control" id="contains" name="contains"/>
 	<span class="input-group-btn">
 			<button class="btn btn-primary" type="submit">Find</button>
 	</span>
@@ -217,13 +217,16 @@ wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licenc
 		                        <label for="technology14"><input type="checkbox" name="environment5" value="5" id="technology14" />&#160;&#160;Water, soil, shelterbelts (18)</label>
 			        </div>
 	</fieldset>
-<div class="form-group">
-	<label for="subject">Food safety, animal health</label><br />
-	<select id="subject" name="subject" class="form-control full-width">
-				<option value="01">Food safety, traceability, biosecurity (39)</option>
-				<option value="02">Animal health, welfare, genetics (24))</option>
-	</select>
-</div>
+	<fieldset> 
+		<legend class="field-name" id="ast-dec">Food safety, animal health</legend>
+	                       <div class="checkbox"> 
+		                        <label for="technology15"><input type="checkbox" name="food1" value="1" id="technology15" />&#160;&#160;Food safety, traceability, biosecurity (39)</label>
+			       </div>
+		               <div class="checkbox"> 
+		                        <label for="technology16"><input type="checkbox" name="food2" value="2" id="technology16" />&#160;&#160;Animal health, welfare, genetics (24)</label>
+			       </div>
+	</fieldset> 
+
 <div class="form-group">
 	<label for="subject">Science, sector innovation</label><br />
 	<select id="subject" name="subject" class="form-control full-width">
