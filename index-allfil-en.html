@@ -102,74 +102,62 @@ wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licenc
 </div>
 <details open="open" class="mrgn-tp-lg">
 	<summary><strong>Agri-business filters</strong></summary>            
-	<fieldset>
-			<legend class="field-name" id="ast-dec">Business success:</legend>
-				<div class="checkbox">
-					<label for="technology1"><input type="checkbox" name="phone" value="1" id="technology1" />&#160;&#160;Financing, credit, stability (43)</label>
-				</div>
-				<div class="checkbox">
-					<label for="technology2"><input type="checkbox" name="laptop" value="2" id="technology2" />&#160;&#160;New to farming (10)</label>
-				</div>
-				<div class="checkbox">
-					<label for="technology3"><input type="checkbox" name="desktop" value="3" id="technology3" />&#160;&#160;Business planning, analyis (33)</label>
-				</div>				
-				<a href="">More business success...</a>		
-	</fieldset>
-	<fieldset>
-		<legend class="field-name" id="ast-dec">Markets, marketing, trade</legend>
-	                       <div class="checkbox"> 
-		                        <label for="technology7"><input type="checkbox" name="marketing1" value="1" id="technology7" />&#160;&#160;Market analysis, prices, forecasts (5)</label>
-			        </div>
-                                <div class="checkbox">
-					<label for="technology8"><input type="checkbox" name="marketing2" value="2" id="technology8" />&#160;&#160;Branding, advertising, promotion (13)</label>
-		                </div>
-			        <div class="checkbox">
-					<label for="technology9"><input type="checkbox" name="marketing3" value="3" id="technology9" />&#160;&#160;Developing new markets, exporting (17)</label>
-		                </div>
-				<a href="">More markets...</a>
-
-	</fieldset> 
-	<fieldset>
-		<legend class="field-name" id="ast-dec">Environment, energy, stewardship</legend>
-	                       <div class="checkbox"> 
-		                        <label for="technology10"><input type="checkbox" name="environment1" value="1" id="technology10" />&#160;&#160;Climate, geography, optimizing land use (9)</label>
-			       </div>
-		               <div class="checkbox"> 
-		                        <label for="technology11"><input type="checkbox" name="environment2" value="2" id="technology11" />&#160;&#160;Energy, sustainability, BMPs (27)</label>
-			        </div>
-		                <div class="checkbox"> 
-		                        <label for="technology12"><input type="checkbox" name="environment3" value="3" id="technology12" />&#160;&#160;Pest management, organic farming (17)</label>
-			        </div>
-		                <div class="checkbox"> 
-		                        <label for="technology13"><input type="checkbox" name="environment4" value="4" id="technology13" />&#160;&#160;Predators, wildlife (7)</label>
-			        </div>
-		                <div class="checkbox"> 
-		                        <label for="technology14"><input type="checkbox" name="environment5" value="5" id="technology14" />&#160;&#160;Water, soil, shelterbelts (18)</label>
-			        </div>
-	</fieldset>
-	<fieldset> 
-		<legend class="field-name" id="ast-dec">Food safety, animal health</legend>
-	                       <div class="checkbox"> 
-		                        <label for="technology15"><input type="checkbox" name="food1" value="1" id="technology15" />&#160;&#160;Food safety, traceability, biosecurity (39)</label>
-			       </div>
-		               <div class="checkbox"> 
-		                        <label for="technology16"><input type="checkbox" name="food2" value="2" id="technology16" />&#160;&#160;Animal health, welfare, genetics (24)</label>
-			       </div>
-	</fieldset> 
-	<fieldset> 
-		<legend class="field-name" id="ast-dec">Science, sector innovation</legend>
-	                       <div class="checkbox"> 
-		                        <label for="technology17"><input type="checkbox" name="science1" value="1" id="technology17" />&#160;&#160;Basic and applied research (34)</label>
-			       </div>
-		               <div class="checkbox"> 
-		                        <label for="technology18"><input type="checkbox" name="science2" value="2" id="technology18" />&#160;&#160;Product development, commercialization (27)</label>
-			       </div>
-		               <div class="checkbox"> 
-		                        <label for="technology19"><input type="checkbox" name="science3" value="3" id="technology19" />&#160;&#160;Manufacturing, processing, value-added (11)</label>
-			       </div>
-				<a href="">More innovation...</a>
-
-	</fieldset>
+	<div class="form-group">
+			<label for="year">Business success</label><br />
+			<select id="year" name="year" class="form-control full-width">
+				<option value="00">Financing, credit, stability</option>
+				<option value="16">New to farming (10)</option>
+				<option value="15">Business planning, analyis (33)</option>
+				<option value="14">Market analysis, prices, forecasts (5)</option>
+				<option value="13">Land purchase, leasing, access (17)</option>
+				<option value="12">2012</option>
+				<option value="11">2011</option>
+				<option value="10">2010</option>
+				<option value="09">2009</option>
+				<option value="08">2008</option>
+				<option value="07">2007</option>
+				<option value="06">2006</option>
+			</select>
+	</div>
+<div class="form-group">
+	<label for="subject">Markets, marketing, trade</label><br />
+	<select id="subject" name="subject" class="form-control full-width">
+				<option value="01">Market analysis, prices, forecasts</option>
+				<option value="02">Branding, advertising, promotion (13)</option>
+				<option value="03">Advertising / Marketing</option>
+				<option value="04">Agriculture</option>
+				<option value="05">Amendments</option>
+				<option value="06">Arts</option>
+	</select>
+</div>
+<div class="form-group">
+	<label for="Organization">Environment, energy, stewardship</label><br /> 
+	<select id="organization" name="organization" class="form-control full-width">
+		<option value="17">Climate, geography, optimizing land use</option>
+		<option value="16">Energy, sustainability, BMPs (27)</option>
+		<option value="15">Pest management, organic farming (17)</option>
+		<option value="14">Predators, wildlife (7)</option>
+		<option value="13">Water, soil, shelterbelts (18)</option>
+        </select>	
+</div>
+<div class="form-group">
+	<label for="subject">Food safety, animal health</label><br />
+	<select id="subject" name="subject" class="form-control full-width">
+				<option value="01">Food safety, traceability, biosecurity</option>
+				<option value="02">Animal health, welfare, genetics (24))</option>
+	</select>
+</div>
+<div class="form-group">
+	<label for="subject">Science, sector innovation</label><br />
+	<select id="subject" name="subject" class="form-control full-width">
+				<option value="01">Basic and applied research</option>
+				<option value="02">Product development, commercialization (27)</option>
+				<option value="03">Manufacturing, processing, value-added (11)/option>
+				<option value="04">Leadership, workforce development (15)</option>
+				<option value="05">Sector competitiveness, adaptation (13)</option>
+				<option value="06">Branding, advertising, promotion (13)</option>
+	</select>
+</div>
 <div class="row">
 <div class="col-xs-6">
 <input type="submit" value="Apply" class="btn btn-primary btn-sm" name="submit" id="submit" />
